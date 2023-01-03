@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  m1booksalive:
+    image: m1booksalive
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
